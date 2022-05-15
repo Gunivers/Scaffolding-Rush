@@ -6,6 +6,11 @@ fill 1090 0 1090 910 0 910 bedrock
 
 forceload add 1100 1100 900 900
 
+#Ender chest GUI management
+scoreboard objectives add Echest_saver_id dummy
+scoreboard players set Min Echest_saver_id -2147483648
+tag @e remove enderchest_saver_created
+
 #trigger controls
 scoreboard objectives add StartGame trigger
 scoreboard objectives add Reset trigger

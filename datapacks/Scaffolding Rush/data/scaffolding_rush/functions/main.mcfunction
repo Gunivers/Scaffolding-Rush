@@ -1,3 +1,8 @@
+#Enderchest GUI management
+execute as @a[tag=!enderchest_saver_created] positioned 0 0 0 run function scaffolding_rush:_tests/create_enderchest_saver
+execute as @a at @s run function scaffolding_rush:_tests/save_enderchest
+execute as @a at @s run function scaffolding_rush:_tests/update_gui
+
 effect give @a minecraft:saturation 999999 1 true
 
 #flip the options value
